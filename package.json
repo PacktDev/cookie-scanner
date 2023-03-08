@@ -1,0 +1,38 @@
+{
+  "name": "cookie-scanner",
+  "version": "1.0.0",
+  "description": "A simple cookie scanner to scan a site for cookies and output them in a JSON format using puppeteer",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/index.js --url https://www.google.com --output ./output.json",
+    "start": "node src/index.js"
+  },
+  "bin": "src/index.js",
+  "author": {
+    "name": "Ahren Stevens-Taylor",
+    "email": "ahrent@packt.com"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PacktDev/cookie-scanner.git"
+  },
+  "keywords": [
+    "cookie-scanner",
+    "spider",
+    "gdpr"
+  ],
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/PacktDev/cookie-scanner/issues"
+  },
+  "homepage": "https://github.com/PacktDev/cookie-scanner#readme",
+  "dependencies": {
+    "puppeteer": "^19.7.2",
+    "yargs": "^17.7.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.5.0"
+  }
+}

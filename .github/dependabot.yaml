@@ -1,0 +1,20 @@
+# Dependabot to keep your dependencies up-to-date
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - "AStevensTaylor"
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    assignees:
+      - "AStevensTaylor"
+    automerged_updates:
+      - match:
+          dependency_type: "all"
+          update_type: "all"

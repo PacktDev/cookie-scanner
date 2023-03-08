@@ -1,0 +1,22 @@
+## Automatically tests and bumps the version of the package when a new PR is opened
+## or when a new commit is pushed to the master branch.
+
+name: Check PR
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+      - run: npm install
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+      - name: Run test
+        run: npm run test
