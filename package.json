@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/PacktDev/cookie-scanner#readme",
   "dependencies": {
-    "puppeteer": "^19.7.2",
+    "puppeteer": "^24.22.3",
     "yargs": "^17.7.1"
   },
   "engines": {
